@@ -396,7 +396,7 @@ progressArea.addEventListener('click', (e) => {
 })
 
 // Video player mouseout
-videoControls.addEventListener('mouseleave', () => {
+videoPlayer.addEventListener('mousemove', () => {
     { clearTimeout(timer) }
         timer = setTimeout(volHide, 5000)
     
