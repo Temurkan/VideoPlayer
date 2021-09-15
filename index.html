@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS  -->
+    <link rel="stylesheet" href="css/dark.css" />
+
+    <!-- FONT AWESOME  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- GOGGLE FONT  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!-- TAB ICON  -->
+    <link rel="icon" href="img/video-icon.png" />
+    <title>Video Player</title>
+  </head>
+  <body>
+    <div class="lds-spinner">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="video-player">
+      <p class="text">The GENTLEMEN - Official Trailer</p>
+      <p class="vol">100 %</p>
+      <div class="video-wrapper">
+        <video id="main-video" src="videos/gentleman.mp4"></video>
+      </div>
+      <div class="setting">
+        <div class="set theme">
+          <h3>Appearance</h3>
+          <div class="ico-text">
+            <span class="checked-theme"></span>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+        <div class="set speed">
+          <h3>Playback speed</h3>
+          <div class="ico-text">
+            <span class="checked-speed">Normal</span>
+            <i class="fas fa-chevron-right"></i>
+          </div>
+        </div>
+      </div>
+      <div class="set-inner">
+        <div class="themes">
+          <div class="title">
+            <i class="fas fa-chevron-left"></i>
+            <h3>Theme</h3>
+          </div>
+          <div class="dark">
+            <p>Dark</p>
+          </div>
+          <div class="light">
+            <p>Light</p>
+          </div>
+        </div>
+        <div class="speeds">
+          <div class="title">
+            <i class="fas fa-chevron-left"></i>
+            <h3>Playback speed</h3>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="0.5" name="speed" id="option-1" />
+            <label for="option-1" class="option-1">
+              <p>0.5</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="1" name="speed" id="option-2" checked />
+            <label for="option-2" class="option-2">
+              <p>Normal</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="1" name="speed" id="option-3" />
+            <label for="option-3" class="option-3">
+              <p>1.5</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="0.5" name="speed" id="option-4" />
+            <label for="option-4" class="option-4">
+              <p>2</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="1" name="speed" id="option-5" />
+            <label for="option-5" class="option-5">
+              <p>3</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+          <div class="speeded">
+            <input type="radio" value="1" name="speed" id="option-6" />
+            <label for="option-6" class="option-6">
+              <p>4</p>
+              <i class="fas fa-check"></i>
+            </label>
+          </div>
+        </div>
+      </div>
+      <div class="video-controls">
+        <div class="progress-area">
+          <div class="progress-bar"></div>
+        </div>
+        <div class="control-btn">
+          <!-- Controls Buttons -->
+          <div class="control-btn-left">
+            <i class="fas fa-step-backward"></i>
+            <div class="play_pause">
+              <i class="fas fa-play active"></i>
+              <i class="fas fa-pause"></i>
+            </div>
+            <i class="fas fa-stop"></i>
+            <i class="fas fa-step-forward"></i>
+            <div class="volume">
+              <i class="fas fa-volume-up active"></i>
+              <i class="fas fa-volume-mute"></i>
+              <i class="fas fa-volume-down"></i>
+              <input type="range" min="0" max="100" value="100" step="5" />
+            </div>
+            <div class="timer">
+              <span class="current-time">0:00 /</span>
+              <span class="max-duration">0:00</span>
+            </div>
+          </div>
+          <div class="control-btn-right">
+            <i class="fas fa-cog"></i>
+            <i class="fas fa-expand active"></i>
+            <i class="fas fa-compress"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="playlist">
+      <div class="video-info">
+        <div class="playlist-text">
+          <i class="fas fa-th-list"></i>
+          <h3>Playlist</h3>
+        </div>
+        <ul class="list">
+
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/theme.js"></script>
+    <script src="js/playlist.js"></script>
+    <script src="js/script.js"></script>    
+  </body>
+</html>
