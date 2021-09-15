@@ -469,6 +469,10 @@ i {
   height: 15px;
 }
 
+.volume i {
+  font-size: 25px;
+}
+
 .control-btn-left .fa-volume-up,
 .control-btn-left .fa-volume-down,
 .control-btn-left .fa-volume-mute {
@@ -495,7 +499,7 @@ input {
   outline: none;
   cursor: pointer;
   transition: 0.3s ease;
-  margin-left: 30px;
+  margin-left: 40px;
 }
 
 input::-webkit-slider-thumb {
