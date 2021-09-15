@@ -574,6 +574,10 @@ input::-webkit-slider-thumb {
   padding: 10px 20px;
 }
 
+.playlist-text i {
+  color: #e2e2e2;
+}
+
 .list-item {
   display: flex;
   margin: 0 5px 0 0;
