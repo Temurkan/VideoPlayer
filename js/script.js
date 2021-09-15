@@ -32,6 +32,8 @@ const volume = document.querySelector('.volume')
 const playlist = document.querySelector('.playlist')
 const list = document.querySelector('.list')
 
+let mask = document.querySelector('.lds-spinner')
+
 let videoIndex = 1
 
 let inpValue = inputVol.value
@@ -39,6 +41,7 @@ let inpValue = inputVol.value
 let timer = null
 
 window.addEventListener('load', () => {
+    mask.classList.add('hide')
     loadVideo(videoIndex)
     progressBar.style.width = '0'
     videoControls.style.transform = 'translateY(0)'
